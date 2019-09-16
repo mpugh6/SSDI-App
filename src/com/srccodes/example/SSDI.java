@@ -45,7 +45,7 @@ public class SSDI extends HttpServlet {
     	String url = "jdbc:mysql://localhost:3306/test_database?serverTimezone=EST5EDT";
     	String user = "admin";
     	String password = "password";
-    	
+    	System.out.println("Something to commit");
     	try(Connection dbConnection = DriverManager.getConnection(url, user, password)){
     		statement = dbConnection.createStatement();
     		System.out.println("Database connected!");
