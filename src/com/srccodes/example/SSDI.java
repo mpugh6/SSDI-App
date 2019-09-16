@@ -52,7 +52,6 @@ public class SSDI extends HttpServlet {
     		PrintWriter printWriter = response.getWriter();
         	ResultSet rs = statement.executeQuery("select * from football_players");
         	printWriter.println("Here are some football players:");
-        	System.out.println("Something to commit... ");
         	while(rs.next()) {
         		printWriter.println(rs.getInt(1) + "  " + rs.getString(2));
         	}
